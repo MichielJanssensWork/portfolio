@@ -1,0 +1,21 @@
+.about-img-circle{
+  img{
+    border: 5px solid #333333;
+    border-radius: 50%;
+
+  }
+}
+
+.about-text{
+  position: relative;
+  span{
+
+    position: absolute;
+
+    right: 0;
+
+    border-right: 5px solid $portfolio-black;
+    height: 80%;
+    width: 25px;
+  }
+}

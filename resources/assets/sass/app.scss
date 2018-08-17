@@ -1,0 +1,31 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "_general";
+@import "_type-scale";
+
+@import "animation/_loading-animation";
+@import "about/_anatomy";
+@import "about/_about";
+
+//misc
+
+.transition{
+  transition: 2s linear;
+}
+
+.transition-fast{
+  transition: 0.2s linear;
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("Montserrat-Bold.otf");
+}

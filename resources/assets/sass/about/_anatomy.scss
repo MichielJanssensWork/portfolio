@@ -1,0 +1,89 @@
+.anatomy-block{
+  position: relative;
+
+  padding-top: 100%;
+  border: 5px solid $portfolio-black;
+  border-radius: 50%;
+
+  img{
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.4s;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    top: 0;
+    border-radius: 50%;
+  }
+}
+
+.anatomy-block:after{
+  border-radius: 50%;
+}
+
+.anatomy-block:hover{
+  .front-anatomy{
+    opacity: 0;
+  }
+}
+
+.anatomy-block:hover ~ .parallelogram-block {
+
+  .parallelogram-shape-1 {
+    top: 22%;
+
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+  }
+
+  .parallelogram-shape-2 {
+    bottom: 22%;
+
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+  }
+}
+
+.parallelogram-block{
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  .parallelogram-shape-1, .parallelogram-shape-2{
+    width: 100%;
+    height: 25%;
+    position: absolute;
+  }
+
+  .parallelogram-shape-1 {
+
+    top: 15%;
+
+    -webkit-transform: skew(-35deg);
+    -moz-transform: skew(-35deg);
+    -o-transform: skew(-35deg);
+    background: $portfolio-green;
+  }
+
+  .parallelogram-shape-2 {
+
+    bottom: 15%;
+
+    -webkit-transform: skew(-35deg);
+    -moz-transform: skew(-35deg);
+    -o-transform: skew(-35deg);
+    background: $portfolio-red;
+  }
+}
